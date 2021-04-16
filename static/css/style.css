@@ -17,6 +17,13 @@ body > header {
     text-shadow: 0 0 1px fuchsia, 0 0 1px fuchsia, 0 0 1px fuchsia, 0 0 1px fuchsia, 0 0 1px fuchsia;
 }
 
+body > footer {
+    margin-top: 5%;
+    text-align: center;
+    color: turquoise;
+    text-shadow: 0 0 1px fuchsia, 0 0 1px fuchsia, 0 0 1px fuchsia, 0 0 1px fuchsia, 0 0 1px fuchsia;
+}
+
 #choosegame {
     text-align: center;
     color: turquoise;
@@ -39,4 +46,56 @@ body > header {
 .gametype {
     display: flex;
     flex-direction: row;
+}
+
+#gamemenu {
+    margin-left: 0px;
+    margin-right: 40px;
+    display: grid;
+    grid-template-areas:
+    'tl tr'
+    'bl br';
+    background-color: black;
+    color: turquoise;
+    text-shadow: 0 0 1px fuchsia, 0 0 1px fuchsia, 0 0 1px fuchsia, 0 0 1px fuchsia, 0 0 1px fuchsia;
+}
+
+.tporig {
+    text-align: center;
+    margin-left: 0px;
+    grid-area: tl;
+    max-width: 100%;
+    max-height: 100%;
+    border-right: thick solid white;
+    border-bottom: thin solid white;
+}
+
+.tpspock {
+    text-align: center;
+    margin-left: 0px;
+    grid-area: bl;
+    max-width: 100%;
+    max-height: 100%;
+    border-right: thick solid white;
+    border-top: thick solid white;
+}
+
+.oporig {
+    text-align: center;
+    padding-left: 30px;
+    grid-area: tr;
+    max-width: 100%;
+    max-height: 100%;
+    border-left: thin solid white;
+    border-bottom: thin solid white;
+}
+
+.opspock {
+    text-align: center;
+    padding-left: 30px;
+    grid-area: br;
+    max-width: 100%;
+    max-height: 100%;
+    border-left: thin solid white;
+    border-top: thick solid white;
 }

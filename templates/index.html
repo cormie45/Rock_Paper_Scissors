@@ -14,5 +14,24 @@
         </div>
         <hr>
     </section>
+    <menu id="gamemenu">
+        <div class="tporig">
+            <a href="http://127.0.0.1:5000/tprps.html"><img src="{{url_for('static', filename='RPS.png')}}" alt="2playeroriginal" style="max-width: 300px;max-height: 300px;"></a>
+            <p>Play the classic Rock, Paper, Scissors against a friend</p>
+        </div>
+        <div class="tpspock">
+            <a href="tprpsls.html"><img src="{{url_for('static', filename='RPSLS.png')}}" alt="2playerspock" style="max-width: 300px;max-height: 300px;"></a>
+            <p>Play Rock, Paper, Scissors, Lizard, Spock against a friend</p>
+        </div>
+        <div class="oporig">
+            <a href="oprps.html"><img src="{{url_for('static', filename='RPS.png')}}" alt="1playeroriginal" style="max-width: 300px;max-height: 300px;"></a>
+            <p>Play the classic Rock, Paper, Scissors against the computer</p>
+        </div>
+        <div class="opspock">
+            <a href="oprpsls.html"><img src="{{url_for('static', filename='RPSLS.png')}}" alt="1playerspock" style="max-width: 300px;max-height: 300px;"></a>
+            <p>Play Rock, Paper, Scissors, Lizard, Spock against the computer</p>
+        </div>
+    </menu>
+    <hr>
     
 {% endblock %}
