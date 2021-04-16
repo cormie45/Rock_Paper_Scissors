@@ -8,10 +8,8 @@ body > header {
     padding-left: 10px;
     padding-right: 10px;
     background-image: url("pacman.gif");
-    background-position: left;
     background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
+    background-size: 75%;
     font-size: large;
     color: black;
     text-shadow: 0 0 1px fuchsia, 0 0 1px fuchsia, 0 0 1px fuchsia, 0 0 1px fuchsia, 0 0 1px fuchsia;
