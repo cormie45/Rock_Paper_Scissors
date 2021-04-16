@@ -11,3 +11,14 @@ def index():
 def tprps():
     return render_template('/tprps.html', title='2 Player Rock Paper Scissors')
 
+@app.route('/tprpsls')
+def tprpsls():
+    return render_template('/tprpsls.html', title='2 Player Rock Paper Scissors')
+
+@app.route('/oprps')
+def oprps():
+    return render_template('/oprps.html', title='2 Player Rock Paper Scissors')
+
+@app.route('/oprpsls')
+def oprpsls():
+    return render_template('/oprpsls.html', title='2 Player Rock Paper Scissors')
