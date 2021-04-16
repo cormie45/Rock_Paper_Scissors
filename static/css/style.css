@@ -1,0 +1,22 @@
+body{
+    font-family: 'Press Start 2P', cursive;
+    background-color: black;
+}
+
+body > header {
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-image: url("pac-man-retro--1280x695.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+    font-size: large;
+    color: black;
+    text-shadow: 0 0 1px fuchsia, 0 0 1px fuchsia, 0 0 1px fuchsia, 0 0 1px fuchsia, 0 0 1px fuchsia;
+}
+
+#choosegame {
+    text-align: center;
+    color: turquoise;
+    text-shadow: 0 0 1px fuchsia, 0 0 1px fuchsia, 0 0 1px fuchsia, 0 0 1px fuchsia, 0 0 1px fuchsia;
+}
