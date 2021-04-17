@@ -1,6 +1,42 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h2>ROCK PAPER SCISSORS</h2>
-<h3>Choose your game!</h3>
+<section id="gameoneheader">
+    <h2>ROCK PAPER SCISSORS</h2>
+    <h3>Player 1 Vs Player 2</h3>
+    <hr>
+</section>
+<form class="gameoneform" action="/tprps" method="post">
+    <div class="playeroneplay">
+    <label for="name1">Player 1:</label>
+    <input type="text" name="name1" id="name1" placeholder="Name?">
+    <hr>
+    <input type="radio" hidden name="player1_choice" id="rock1" value="rock"/>
+    <label for="rock1"><img src="{{url_for('static', filename='RockEnable.png')}}" alt="rocke"></label>
+    <h2>ROCK</h2>
+    <input type="radio" hidden name="player1_choice" id="paper1" value="paper"/>
+    <label for="paper1"><img src="{{url_for('static', filename='PaperEnable.png')}}" alt="papere"></label>
+    <h2>PAPER</h2>
+    <input type="radio" hidden name="player1_choice" id="scissors1" value="scissors"/>
+    <label for="scissors1"><img src="{{url_for('static', filename='ScissorsEnable.png')}}" alt="scissorse"></label>
+    <h2>SCISSORS</h2>
+    <hr>
+    </div>
+    <div class="playertwoplay">
+    <label for="name2">Player 2:</label>
+    <input type="text" name="name2" id="name2" placeholder="Name?">
+    <hr>
+    <input type="radio" hidden name="player2_choice" id="rock2" value="rock"/>
+    <label for="rock2"><img src="{{url_for('static', filename='RockEnable.png')}}" alt="rocke"></label>
+    <h2>ROCK</h2>
+    <input type="radio" hidden name="player2_choice" id="paper2" value="paper"/>
+    <label for="paper2"><img src="{{url_for('static', filename='PaperEnable.png')}}" alt="papere"></label>        
+    <h2>PAPER</h2>
+    <input type="radio" hidden name="player2_choice" id="scissors2" value="scissors"/>
+    <label for="scissors2"><img src="{{url_for('static', filename='ScissorsEnable.png')}}" alt="scissorse"></label>
+    <h2>SCISSORS</h2>
+    <hr>
+    </div>
+    <input class="playgameone" type="submit" value="PLAY!">
+</form>
 {% endblock %}

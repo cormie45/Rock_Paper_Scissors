@@ -1,6 +1,8 @@
 body{
     font-family: 'Press Start 2P', cursive;
     background-color: black;
+    color: turquoise;
+    text-shadow: 0 0 1px fuchsia, 0 0 1px fuchsia, 0 0 1px fuchsia, 0 0 1px fuchsia, 0 0 1px fuchsia;
 }
 
 body > header {
@@ -18,26 +20,18 @@ body > header {
 body > footer {
     margin-top: 5%;
     text-align: center;
-    color: turquoise;
-    text-shadow: 0 0 1px fuchsia, 0 0 1px fuchsia, 0 0 1px fuchsia, 0 0 1px fuchsia, 0 0 1px fuchsia;
 }
 
 #choosegame {
     text-align: center;
-    color: turquoise;
-    text-shadow: 0 0 1px fuchsia, 0 0 1px fuchsia, 0 0 1px fuchsia, 0 0 1px fuchsia, 0 0 1px fuchsia;
 }
 
 .twoplayer {
-    color: turquoise;
-    text-shadow: 0 0 1px fuchsia, 0 0 1px fuchsia, 0 0 1px fuchsia, 0 0 1px fuchsia, 0 0 1px fuchsia;
     text-align: left;
     flex: 50%;
 }
 
 .oneplayer {
-    color: turquoise;
-    text-shadow: 0 0 1px fuchsia, 0 0 1px fuchsia, 0 0 1px fuchsia, 0 0 1px fuchsia, 0 0 1px fuchsia;
     text-align: right;
 }
 
@@ -53,9 +47,6 @@ body > footer {
     grid-template-areas:
     'tl tr'
     'bl br';
-    background-color: black;
-    color: turquoise;
-    text-shadow: 0 0 1px fuchsia, 0 0 1px fuchsia, 0 0 1px fuchsia, 0 0 1px fuchsia, 0 0 1px fuchsia;
 }
 
 .tporig {
@@ -96,4 +87,64 @@ body > footer {
     max-height: 100%;
     border-left: thin solid turquoise;
     border-top: thick solid fuchsia;
+}
+
+#gameoneheader {
+    text-align: center;
+}
+
+#gametwoheader {
+    text-align: center;
+}
+
+#gamethreeheader {
+    text-align: center;
+}
+
+#gamefourheader {
+    text-align: center;
+}
+
+input[type=text] {
+    color: white;
+    background-color: black;
+    border: 3px solid fuchsia;
+    border-radius: 6px;
+}
+
+.gameoneform {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.gametwoform {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.playeroneplay {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: calc(50%);
+    text-align: center;
+}
+
+.playertwoplay {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: calc(50%);
+    text-align: center;
+}
+
+.playgameone:nth-child(3n) {
+    width: 100%;
+    background-color: fuchsia;
+}
+.playgametwo {
+    width: 100%;
+    background-color: fuchsia;
 }
