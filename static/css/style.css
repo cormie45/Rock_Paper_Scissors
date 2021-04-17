@@ -1,5 +1,5 @@
 body{
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Press Start 2P', Arial, Helvetica, sans-serif;
     background-color: black;
     color: turquoise;
     text-shadow: 0 0 1px fuchsia, 0 0 1px fuchsia, 0 0 1px fuchsia, 0 0 1px fuchsia, 0 0 1px fuchsia;
@@ -29,6 +29,17 @@ body > footer {
 #winner {
     text-align: center;
     padding-bottom: 20px;
+}
+
+.thechoices {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.theresult {
+    margin-top: 10px;
+    text-align: center;
 }
 
 .twoplayer {

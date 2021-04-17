@@ -2,7 +2,7 @@
 
 {% block content %}
 <section id="winner">
-    <h2>ROCK PAPER SCISSORS</h2>
+    <h2>ROCK PAPER SCISSORS LIZARD SPOCK</h2>
     <h3>{{ player_1.name }} Vs {{ player_2.name }}</h3>
     <h4>The Results!</h4>
     <hr>
@@ -18,6 +18,12 @@
     {% if player_1.choice == "scissors" %}
     <img src="{{url_for('static', filename='ScissorsEnable.png')}}" alt="scissors" style="max-width: 300px;max-height: 300px;">
     {% endif %}
+    {% if player_1.choice == "lizard" %}
+    <img src="{{url_for('static', filename='LizardEnable.png')}}" alt="lizard" style="max-width: 300px;max-height: 300px;">
+    {% endif %}
+    {% if player_1.choice == "spock" %}
+    <img src="{{url_for('static', filename='SpockEnable.png')}}" alt="spock" style="max-width: 300px;max-height: 300px;">
+    {% endif %}
     {{ player_2.name}} played {{ player_2.choice}}
     {% if player_2.choice == "rock" %}
     <img src="{{url_for('static', filename='RockEnable.png')}}" alt="rock" style="max-width: 300px;max-height: 300px;">
@@ -27,6 +33,12 @@
     {% endif %}
     {% if player_2.choice == "scissors" %}
     <img src="{{url_for('static', filename='ScissorsEnable.png')}}" alt="scissors" style="max-width: 300px;max-height: 300px;">
+    {% endif %}
+    {% if player_2.choice == "lizard" %}
+    <img src="{{url_for('static', filename='LizardEnable.png')}}" alt="lizard" style="max-width: 300px;max-height: 300px;">
+    {% endif %}
+    {% if player_2.choice == "spock" %}
+    <img src="{{url_for('static', filename='SpockEnable.png')}}" alt="spock" style="max-width: 300px;max-height: 300px;">
     {% endif %}
 </div>
 <p>
