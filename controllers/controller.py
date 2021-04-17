@@ -1,7 +1,7 @@
 from flask import render_template, request
 from app import app
-from modules.game import two_player, single_player, single_player_spock
-from modules.player import Player
+from modules.game import *
+from modules.player import *
 
 @app.route('/')
 def index():
@@ -21,9 +21,13 @@ def tprps_form():
     choice_1 = request.form['player1_choice']
     player2_name = request.form['name2']
     choice_2 = request.form['player2_choice']
-    player_1 = Player(name=player1_name, choice=choice_1)
-    player_2 = Player(name=player2_name, choice=choice_2)
-    two_player(player_1, player_2)
+    player_1 = Player(name=player1_name)
+    player_1.make_choice(choice_1)
+    player_2 = Player(name=player2_name)
+    player_2.make_choice(choice_2)
+    play_game = Game(player_1, player_2)
+    result = play_game.result(player_1, player_2)
+    return render_template('score.html', title='Winner Is', result=result, player_1=player_1, player_2=player_2)
 
 @app.route('/tprpsls')
 def tprpsls():

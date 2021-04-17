@@ -1,5 +1,39 @@
 {% extends "base.html" %}
 
 {% block content %}
+<section id="winner">
+    <h2>ROCK PAPER SCISSORS</h2>
+    <h3>The Results!</h3>
+    <hr>
+</section>
+{{ player_1.name }} played {{ player_1.choice}}
+{% if player_1.choice == "rock" %}
+<img src="{{url_for('static', filename='RockEnable.png')}}" alt="rock" style="max-width: 300px;max-height: 300px;">
+{% endif %}
+{% if player_1.choice == "paper" %}
+<img src="{{url_for('static', filename='PaperEnable.png')}}" alt="paper" style="max-width: 300px;max-height: 300px;">
+{% endif %}
+{% if player_1.choice == "scissors" %}
+<img src="{{url_for('static', filename='ScissorsEnable.png')}}" alt="scissors" style="max-width: 300px;max-height: 300px;">
+{% endif %}
+{{ player_2.name}} played {{ player_2.choice}}
+{% if player_2.choice == "rock" %}
+<img src="{{url_for('static', filename='RockEnable.png')}}" alt="rock" style="max-width: 300px;max-height: 300px;">
+{% endif %}
+{% if player_2.choice == "paper" %}
+<img src="{{url_for('static', filename='PaperEnable.png')}}" alt="paper" style="max-width: 300px;max-height: 300px;">
+{% endif %}
+{% if player_2.choice == "scissors" %}
+<img src="{{url_for('static', filename='ScissorsEnable.png')}}" alt="scissors" style="max-width: 300px;max-height: 300px;">
+{% endif %}
 
+<p>
+<div>
+{% if result %}
+<b>{{ result.name }}</b> wins with {{ result.choice}}!
+{% else %}
+<b>It's a draw!</b>
+{% endif %}
+</div>
+</p>
 {% endblock %}

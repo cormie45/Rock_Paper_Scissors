@@ -26,6 +26,11 @@ body > footer {
     text-align: center;
 }
 
+#winner {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
 .twoplayer {
     text-align: left;
     flex: 50%;
