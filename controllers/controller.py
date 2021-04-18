@@ -57,11 +57,22 @@ def oprps_form():
     choice_1 = request.form['player1_choice']
     player_1 = Player(name=player1_name)
     player_1.make_choice(choice_1)
-    player_2 = Game.computer_rps()
+    player_2 = Player("A.I.")
     play_game = Game(player_1, player_2)
-    result = play_game.result(player_1, player_2)
+    result = play_game.computer_rps(player_1, player_2)
     return render_template('score.html', title='Winner Is', result=result, player_1=player_1, player_2=player_2)
 
 @app.route('/oprpsls')
 def oprpsls():
     return render_template('/oprpsls.html', title='1 Player Rock Paper Scissors Lizard Spock')
+
+@app.route('/oprpsls', methods = ["POST"])
+def oprpsls_form():
+    player1_name = request.form['name1']
+    choice_1 = request.form['player1_choice']
+    player_1 = Player(name=player1_name)
+    player_1.make_choice(choice_1)
+    player_2 = Player("A.I.")
+    play_game = Game(player_1, player_2)
+    result = play_game.computer_rpsls(player_1, player_2)
+    return render_template('score2.html', title='Winner Is', result=result, player_1=player_1, player_2=player_2)

@@ -22,7 +22,7 @@ class Game:
     def get_winner(self, player):
         self.winning_player = player
         
-    def result(self, player_1,player_2):
+    def result(self, player_1, player_2):
         if player_1.choice == player_2.choice:
             return None
         for game in self.wins:
@@ -33,10 +33,28 @@ class Game:
                 self.get_winner(player_2)
                 return self.winning_player
 
-    def computer_rps(self):
-        self.player_2 = Player("A.I.")
+    
+                
+    def computer_rps(self, player_1, player_2):
         self.player_2.choice = random.choice(["rock", "paper", "scissors"])
+        if player_1.choice == player_2.choice:
+            return None
+        for game in self.wins:
+            if [player_1.choice, player_2.choice] == game:
+                self.get_winner(player_1)
+                return self.winning_player
+            elif [player_2.choice, player_1.choice] == game:
+                self.get_winner(player_2)
+                return self.winning_player
 
-    def computer_rpsls(self):
-        self.player_2 = Player("A.I.")
+    def computer_rpsls(self, player_1, player_2):
         self.player_2.choice = random.choice(["rock", "paper", "scissors", "lizard", "spock"])
+        if player_1.choice == player_2.choice:
+            return None
+        for game in self.wins:
+            if [player_1.choice, player_2.choice] == game:
+                self.get_winner(player_1)
+                return self.winning_player
+            elif [player_2.choice, player_1.choice] == game:
+                self.get_winner(player_2)
+                return self.winning_player
