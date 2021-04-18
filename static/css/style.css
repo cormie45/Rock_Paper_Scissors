@@ -40,6 +40,7 @@ body > footer {
 .theresult {
     margin-top: 10px;
     text-align: center;
+    padding-bottom: 50px;
 }
 
 .twoplayer {
@@ -164,3 +165,36 @@ input[type=text] {
     width: 100%;
     background-color: fuchsia;
 }
+
+#options {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.back {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: calc(50%);
+    text-align: center;
+}
+
+.home {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: calc(50%);
+    text-align: center;  
+}
+
+a:link {
+    color: black;
+    text-shadow: 0 0 1px fuchsia, 0 0 1px fuchsia, 0 0 1px fuchsia, 0 0 1px fuchsia, 0 0 1px fuchsia;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: turquoise;
+    text-shadow: 0 0 1px fuchsia, 0 0 1px fuchsia, 0 0 1px fuchsia, 0 0 1px fuchsia, 0 0 1px fuchsia;
+    background-color: transparent;
+    text-decoration: underline;
+  }

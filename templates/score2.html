@@ -53,4 +53,9 @@
     {% endif %}
     </div>
 </p>
+<section id="options">
+    <div class="back"><a href="#" onClick="history.go(-1)">PLAY AGAIN!</a></div>
+    <div class="home"><a href="{{ url_for('index') }}">QUIT</a></div>  
+</section>
+
 {% endblock %}
