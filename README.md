@@ -2,6 +2,7 @@
 
 Python | Flask
 
+
 <img src="https://i.ibb.co/TMFfFNs/Read-Me-Screenshot.png" alt="Read-Me-Screenshot" border="0">
 
 Play Rock, Paper, Scissors (and Lizard Spock) Vs the computer or a friend!
@@ -15,8 +16,8 @@ Instructions:
   
   
   
-  <a href="https://ibb.co/w48RNs2"><img src="https://i.ibb.co/4pC7Zd0/Screenshot-2021-07-14-at-11-01-14.png" alt="Screenshot-2021-07-14-at-11-01-14" border="0"></a>
-  
+<img src="https://i.ibb.co/4pC7Zd0/Screenshot-2021-07-14-at-11-01-14.png" alt="Screenshot-2021-07-14-at-11-01-14" border="0">
+
   5. Hover over the http address and select 'Follow Link'.
   6. Have Fun!
   7. Ctrl+C to stop the App.
